@@ -5,21 +5,21 @@
 class Sqlitr2 < Formula
   desc "sqlitr2 is a trivial Go/CGo SQLite CLI"
   homepage "https://github.com/neilotoole/sqlitr2"
-  version "0.0.24"
+  version "0.0.29"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sqlitr2/releases/download/v0.0.24/sqlitr2_0.0.24_macos_amd64.tar.gz"
-      sha256 "df201d2a51017a9885466d79f70cbd9e8735a2a2bc4746c6193e765e0fb666d6"
+      url "https://github.com/neilotoole/sqlitr2/releases/download/v0.0.29/sqlitr2_0.0.29_macos_amd64.tar.gz"
+      sha256 "ad08d0dbe467244fdde28e8b0bd315f56efac6fdffaddc2d138092a5beeca64f"
 
       def install
         bin.install "sqlitr2"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neilotoole/sqlitr2/releases/download/v0.0.24/sqlitr2_0.0.24_macos_arm64.tar.gz"
-      sha256 "e08171b57aeed6e52bd4265e5cf5a1c201b84d1cb60bc19555c9b5b3143abe46"
+      url "https://github.com/neilotoole/sqlitr2/releases/download/v0.0.29/sqlitr2_0.0.29_macos_arm64.tar.gz"
+      sha256 "79d00cc10ea918d6581526f24aad140687af3f5edf592f9f70d29deec759975b"
 
       def install
         bin.install "sqlitr2"
@@ -29,16 +29,16 @@ class Sqlitr2 < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilotoole/sqlitr2/releases/download/v0.0.24/sqlitr2_0.0.24_linux_arm64.tar.gz"
-      sha256 "6eee1df073b9d6cc2a3c154ccdf1e80a5ee42ac5e9aae50ca21a2c87a2d264c3"
+      url "https://github.com/neilotoole/sqlitr2/releases/download/v0.0.29/sqlitr2_0.0.29_linux_arm64.tar.gz"
+      sha256 "3510c3f3f6af5a909b43d3ab3786d1502c285e88050204b17ad32488bb75da97"
 
       def install
         bin.install "sqlitr2"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sqlitr2/releases/download/v0.0.24/sqlitr2_0.0.24_linux_amd64.tar.gz"
-      sha256 "0c4a71f5f92c317f05a74bb6fd0f382103491885e226684fe14317bde8363cb6"
+      url "https://github.com/neilotoole/sqlitr2/releases/download/v0.0.29/sqlitr2_0.0.29_linux_amd64.tar.gz"
+      sha256 "af33e303f1f89c0ec7c39f18bd63bb83d43c155ce28af2d50785b6736fe0c086"
 
       def install
         bin.install "sqlitr2"
